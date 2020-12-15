@@ -1,0 +1,21 @@
+Script started on Tue 15 Dec 2020 01:53:20 PM EST
+[meg@centos246 ~]$ which cleanup
+/usr/bin/which: no cleanup in (/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/meg/.local/bin:/home/meg/bin)
+[meg@centos246 ~]$ cd bing
+bash: cd: bin: No such file or directory
+[meg@centos246 ~]$ cd /media
+[meg@centos246 media]$ ls
+cdrom  sf_shared
+[meg@centos246 media]$ cd sf_shared/
+[meg@centos246 sf_shared]$ ls
+cleanup
+[meg@centos246 sf_shared]$ cleanup test_run.txt
+bash: cleanup: command not found
+[meg@centos246 sf_shared]$ mkdir ~/bin
+[meg@centos246 sf_shared]$ cp cleanup ~/bin
+[meg@centos246 sf_shared]$ which cleanup
+~/bin/cleanup
+[meg@centos246 sf_shared]$ exit
+exit
+
+Script done on Tue 15 Dec 2020 02:04:47 PM EST
